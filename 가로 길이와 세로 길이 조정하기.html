@@ -1,0 +1,28 @@
+<!-- HTML 엘리먼트의 가로길이와 세로길이를 조정하는 방법에 대해 알아보겠습니다.
+     가로길이를 조정하는 CSS의 속성은 width이고, 세로 길이를 조정하는 속성은 height입니다.
+     단위는 %, px, em 등을 사용합니다. -->
+
+<!-- 가로 길이 세로 길이 조정 방법
+     선택자{width:수 단위}
+     선택자{height:수 단위}
+-->
+
+<!-- 2가지 속성을 사용하려면 구분자로 세미콜론(;)을 사용하므로,
+  width와 height를 사용하려면 다음과 같이 작성합니다.
+  선택자{width:수 단위; height:수 단위}
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title> HTML 엘리먼트 길이 조정하기 </title>
+  <style>
+    .w50p{width:50px}
+  </style>
+</head>
+<body>
+  <p>가로길이를 적용하지 않은 문구입니다. </p>
+  <p class = "w50p">가로길이를 적용한 문구입니다. </p>
+</body>
+</html>
