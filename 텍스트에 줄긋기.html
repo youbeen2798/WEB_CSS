@@ -1,0 +1,31 @@
+<!-- 텍스트에 줄긋기를 할 수 있게 해주는 CSS 속성은 text-decoration입니다.
+     text-decoration 속성에 사용되는 값은 다음과 같습니다.
+
+     1. overline : 윗줄
+     2. underline : 밑줄
+     3. line-through : 가운뎃줄
+     4. underline overline : 윗줄과 밑줄
+     5. none : 라인 없음
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title> 텍스트에 줄긋기 </title>
+  <style>
+    .underline{text-decoration:underline}
+    .overline{text-decoration:overline}
+    .lineAndOver{text-decoration:underline overline}
+    .lineThrough{text-decoration:line-through}
+    .none{text-decoration:none}
+  </style>
+</head>
+<body>
+  <p class = "underline">I am underline</p>
+  <p class = "overline">I am overline</p>
+  <p class = "lineAndOver">I am underline overline</p>
+  <p class = "lineThrough">I am line-through</p>
+  <p class = "none">I have no line</p>
+</body>
+</html>
