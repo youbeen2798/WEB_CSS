@@ -1,0 +1,26 @@
+<!-- absolute는 부모 엘리먼트의 position 속성값이 absoulte, fixed, relative인 엘리먼트 안에서
+     자신이 원하는 곳에 해당 박스를 위치시킬 수 있습니다. top은 위, left는 왼쪽, right는 오른쪽, bottom은 아래로 기준으로 값을 조정합니다. -->
+
+<!-- absolute 속성 사용 방법 예시
+     선택자{position:abosolute; top: 값}
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title> HTML 엘리먼트 이동시키기 </title>
+  <style>
+    .absolute{position:absolute; width:100px; height:100px} /*가로길이 100px, 세로길이 100px */
+    .absolute:nth-child(1){background:skyblue; left:100px} /*왼쪽을 기준으로 오른쪽 방향으로 100px이동*/
+    .absolute:nth-child(2){background:hotpink; top:110px; left:210px} /*왼쪽을 기준으로 오른쪽 방향으로 210px 이동, 위를 기준으로 아래 방향으로 110px 이동 */
+    .absolute:nth-child(3){background:yellow; top:220px; left:320px} /* 왼쪽을 기준으로 오른쪽 방향으로 320px 이동, 위를 기준으로 아래 방향으로 220px 이동 */
+  </style>
+</head>
+<body>
+  <div class = "absolute">position의 값을 absolute으로 적용한 박스1</div>
+  <div class = "absolute">position의 값을 absolute으로 적용한 박스2</div>
+  <div class = "absolute">position의 값을 absolute으로 적용한 박스3</div>
+</body>
+</html>
