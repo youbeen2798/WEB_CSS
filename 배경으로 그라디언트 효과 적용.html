@@ -1,0 +1,34 @@
+<!-- CSS로 배경에 그라디언트 효과를 구현할 수 있습니다. 다만, CSS3에 새로 생긴 기능이므로
+  인터넷 익스플로러 10 이상, 엣지, 크롬 최신 버전, 사파리 최신 버전, 오페라 최신 버전이어야합니다.-->
+
+<!-- 접두어는 웹브라우저가 버전업이 되면서 필요 없게 되었습니다. 접두어는 테스트용일 때 사용합니다.
+     테스트 기간을 마치고 해당 CSS 속성을 정식으로 사용하게 되면 접두어를 사용하지 않아도 됩니다. -->
+
+
+<!-- 웹부라우저에 따른 접두어 사용
+     1. -wevkit- : 웹킨 엔진(chrome, safari, 안드로이드 기본 웹브라우저)
+     2. -moz- : 모질라 엔진(파이어폭스)
+     3. -o- : 오페라 웹브라우저에서 사용하는 엔진
+     4. -ms- : 인터넷 익스플로러(버전이 다양하여 버전마다 다름)  -->
+
+<!-- background 속성값으로 gradient를 사용하는 방법
+     선택자{background:-접두어-패턴의 종류-gradient(시작하는 색, 끝나는 색)}-->
+
+<!-- 패턴의 종류는 linear/radial 2가지가 있음 -->
+
+<!-- 접두어 사용 방법 예시(패턴의 종류가 linear일 때)
+     선택자{background-ms-linear-gradient(skyblue, hotpink)} -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>배경으로 gradient효과 주기</title>
+  <style>
+    .gradient{width:100%; height:100px; background:radial-gradient(skyblue, hotpink)}
+  </style>
+</head>
+<body>
+  <div class = "gradient"></div>
+</body>
+</html>
