@@ -1,0 +1,27 @@
+<!-- float는 HTML 엘리먼트의 흐름을 제어합니다. 값은 기본값인 none과 left, right가 있습니다.
+left를 값으로 적용하면 해당 엘리먼트가 왼쪽에 위치하고, right를 적용하면 오른쪽에 위치합니다. -->
+
+
+<!-- flaoat 속성 사용방법
+    선택자{float:left}
+-->
+
+<!-- 각각 색이 다르지만 사이즈가 같은 박스 2개를 만든 후 float 속성값에 나타나는
+     각각 left와 right를 적용하여 어떻게 다른지를 확인하는 예제입니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>float에 대해서 알아보자.</title>
+  <style>
+    div{width:200px; height:200px}
+    .box1{float:left; background: skyblue}
+    .box2{float:right; background: hotpink}
+  </style>
+</head>
+<body>
+  <div class = "box1">float:left가 적용된 박스</div>
+  <div class = "box2">float:right가 적용된 박스</div>
+</body>
+</html>
