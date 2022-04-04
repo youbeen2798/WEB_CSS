@@ -1,0 +1,32 @@
+<!-- 박스에 외곽선을 적용하는 CSS 속성은 border입니다.
+
+     border 속성 사용 방법
+     선택자{border: 외곽선 굵기 외곽선 스타일 외곽선 색}
+    -->
+
+<!-- 원하는 부분에만 외곽선을 적용할 수 있습니다. 위쪽에만 적용하려면 border-top 속성을, 오른쪽에만 적용하려면 border-right 속성을,
+     아래쪽에만 적용하려면 border-bottom 속성을, 왼쪽에만 적용하려면 border-left 속성을 사용합니다.
+
+     아래는 박스 4개를 생성한 후 한 면씩 외곽선을 적용한 예제입니다. -->
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset = "utf-8" />
+    <title>박스에 외곽선 긋기</title>
+    <style>
+      div{width:150px; height:40px; margin-top:20px;background:skyblue}
+      .topBorder{border-top:2px solid #000}
+      .rightBorder{border-right:2px solid #000}
+      .bottomBorder{border-bottom:2px solid #000}
+      .leftBorder{border-left:2px solid #000}
+    </style>
+  </head>
+  <body>
+    <div class = "topBorder">border-top</div>
+    <div class = "rightBorder">border-right</div>
+    <div class = "bottomBorder">border-bottom</div>
+    <div class = "leftBorder">border-left</div>
+  </body>
+  </html>
