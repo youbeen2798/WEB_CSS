@@ -1,0 +1,38 @@
+<!-- 박스에 외곽선을 적용하는 CSS 속성은 border입니다.
+
+     border 속성 사용 방법
+     선택자{border: 외곽선 굵기 외곽선 스타일 외곽선 색}
+    -->
+
+<!-- 아래는 여러 외곽선 스타일을 적용하여 한눈에 확인하는 예제입니다. margin-top이라는 속성은
+  박스 바깥 여백을 조정하는 속성이며, 결과를 편리하게 보기 위해 아직 설명되지 않은 속성을 사용했습니다
+  이 부분은 여백을 학습할 때 다룹니다. -->
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset = "utf-8" />
+    <title> 박스에 외곽선 긋기</title>
+    <style>
+      div{width:200px; height:20px; margin-top:5px; text-align:center}
+      .solid{border:1px solid #000}
+      .dotted{border:1px dotted #000}
+      .dashed{border:1px dashed #000}
+      .double{border:4px double #000}
+      .groove{border:4px groove #000}
+      .ridge{border:4px ridge #ccc}
+      .inset{border:4px inset #ccc}
+      .outset{border:4px outset #ccc}
+    </style>
+  </head>
+  <body>
+    <div class = "solid">solid</div>
+    <div class = "dotted">dotted</div>
+    <div class = "dashed">dashed</div>
+    <div class = "double">double</div>
+    <div class = "groove">groove</div>
+    <div class = "ridge">ridge</div>
+    <div class = "inset">inset</div>
+    <div class = "outset">outset</div>
+  </body>
+  </html>
