@@ -1,0 +1,22 @@
+<!-- div 태그는 block 방식의 채그로, 실제 width, height 그리고 background를 적용하여 눈으로 확인하면
+     해당 크기만큼 영역을 차지하는 것 같지만, 실제로는 가로 길이를 100% 차지하고 있습니다.
+
+     하지만, float:left를 적용하면 각 박스는 width 속성값만큼의 크기를 갖게 되어 줄 바뀜 없이 하나의 라인에 나란히 나열됩니다.-->
+<!DOCTYTPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>float에 대해서 알아보자.</title>
+  <style>
+    div{float:left; width:120px; height:120px}
+    .box1{background:skyblue}
+    .box2{background:hotpink}
+    .box3{background:yellow}
+  </style>
+</head>
+<body>
+  <div class = "box1"></div>
+  <div class = "box2"></div>
+  <div class = "box3"></div>
+</body>
+</html>
