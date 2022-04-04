@@ -1,0 +1,27 @@
+<!-- 이번에는 float의 특성을 알기 위해 한 가지 실험을 해보겠습니다.
+     div 태그는 block 방식의 태그이고, block 방식의 태그는 width, height 그리고 background를 적용하여
+     눈으로 확인하면 해당 크기만큼 영역을 차지하는 것 같지만, 실제로는 가로 길이를 100% 차지하고 있습니다.
+     그러므로 그 다음 엘리먼트가 div 태그의 아래에 위치하기 때문에 수직으로 정렬됩니다.
+
+     block방식, inline 방식에 관련된 내용은 display에서 자세히 다룹니다. -->
+
+<!-- 다음은 float 속성을 사용하지 않은 상태에서 색은 각각 다르지만, 사이즈는 같은 박스 3개를 생성한 예제입니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>float에 대해서 알아보자.</title>
+  <style>
+    div{width:120px; height:120px}
+    .box1{background:skyblue}
+    .box2{background:hotpink}
+    .box3{background:yellow}
+  </style>
+</head>
+<body>
+  <div class = "box1"></div>
+  <div class = "box2"></div>
+  <div class = "box3"></div>
+</body>
+</html>
