@@ -1,0 +1,43 @@
+<!-- padding을 적용했을 때, 가로 혹은 세로가 늘어나 보이는 현상을 막기 위해
+     그 길이를 padding에 적용된 만큼 줄여서 적용하는 방법이 있습니다.
+     padding을 사용하는 이유 중 하나가 박스와 박스 안의 엘리먼트 간격을 조정하기 위한 방법입니다.
+     이 경우에는 박스 안의 엘리먼트에 margin값을 적용하는 방법이 있습니다.
+
+     1. padding이 적용된 박스
+     2. padding이 적용된 만큼 width와 height 속성값을 줄인 박스
+     3. 박스 안의 엘리먼트에 margin을 적용한 박스
+     4. 아무것도 적용하지 않은 박스
+
+     위 4개 박스를 만든 후에 차이를 확인하겠습니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>박스의 안에서 여백 지정</title>
+  <style>
+    div{float:left; margin-left:10px; width:100px; height:100px}
+    .normal{background:yellow}
+    .padding{background:hotpink; padding:100px 0 0 0}
+    .padding2{background:purple; height:70px; padding:30px 0 0 0}
+    .margin{background:skyblue}
+    .margin p{margin:30px 0 0 0}
+  </style>
+</head>
+<body>
+  <div class = "normal">기본박스</div>
+  <div class = "padding">padding이 적용된 박스</div>
+  <div class = "padding2">padding이 적용된 박스</div>
+  <div class = "margin">
+    <p>자식요소에 margin 적용</p>
+  </div>
+</body>
+</html>
+
+<!-- 노란색 박스는 박스와 안의 텍스트가 간격 없이 붙어 있고,
+     분홍색 박스는 padding-top이 적용된 값만큼 텍스트와의 관계도 떨어져 있으며,
+     박스의 길이도 늘어났습니다.
+     보라색 박스는 padding-top이 적용되어 있지만, 늘어난 값만큼 height를 줄였으므로
+     세로 길이는 노란 박스와 차이가 없습니다.
+     하늘색 박스는 padding 속성을 사용하지 않고 자식 엘리먼트에 margin을 적용하였으므로
+     하늘색 박스의 사이즈 자체에는 영향을 미치지 않습니다. -->
