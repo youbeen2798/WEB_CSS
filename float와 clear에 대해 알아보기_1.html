@@ -1,0 +1,32 @@
+<!-- 3개의 박스에 모두 float:left가 적용되어 가로로 나열되어 있는데
+     2번째 박스를 아래로 내리고 싶어서 float를 적용하지 않으면 박스가 겹쳐지는 상황이 발생할 수 있습니다.
+     이런 경우에는 clear 속성을 적용합니다. -->
+
+<!-- clear 속성 사용 방법 예시
+     선택자{clear:both}
+-->
+
+<!-- clear 속성에 left값을 적용하면 float 속성값이 left가 적용된 박스의 아래에 위치합니다.
+     그러므로 clear 속성값을 left로 적용하면 하늘색 박스로 가릴수 있습니다.
+     이와 반대로 하늘색 박스의 float 속성값에 right가 적용되어 있다면 clear 속성갚에 left로 적용해도
+     아래로 내려가지 않습니다.
+     그리고, 앞의 박스 float 속성값이 left이든 right이든 아래로 내리고 싶다면 both를 사용합니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>clear에 대해서 알아보자</title>
+  <style>
+    div{width:120px; height:120px}
+    .box1{float:left; background: skyblue}
+    .box2{clear:left; background:hotpink}
+    .box3{float:left; background:yellow}
+  </style>
+</head>
+<body>
+  <div class = "box1"></div>
+  <div class = "box2"></div>
+  <div class = "box3"></div>
+</body>
+</html>
