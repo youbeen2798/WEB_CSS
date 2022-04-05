@@ -1,0 +1,35 @@
+<!-- padding을 사용할 때 유의사항이 있습니다. 예를 들어 박스의 height를 100으로 지정하고 padding-up 속성값을 20px로 지정하면
+     그 박스의 길이가 120px로 보입니다. 그럼 이를 확인하기 위해 padding-top을 적용한 박스와 적용하지 않은 박스를 만들어
+     확인하겠습니다. -->
+
+<!-- padding 속성값 개별적으로 적용 가능
+     1. padding-top : 박스 위 여백 설정
+     2. padding-right : 박스 오른쪽 여백 설정
+     3. padding-bottom : 박스 아래 여백 설정
+     4. padding-left : 박스 왼쪽 여백 설정 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>박스의 안에서 여백 지정 </title>
+  <style>
+    div{float:left; width:100px; height: 100px}
+    .notPadding{background:skyblue}
+    .padding{background:hotpink; padding-top:50px}
+  </style>
+</head>
+<body>
+  <div class = "notPadding">
+    padding이 적용되지 않은 박스
+  </div>
+  <div class = "padding">
+    padding이 적용된 박스
+  </div>
+</body>
+</html>
+
+<!-- 위와 같이 세로값이 늘어나 보이는 현상을 막는데는
+     height값을 padding에 적용된 값만큼 줄여서 적용하는 방법이 있습니다.
+     그리고 padding을 사용하는 이유 중 하나가 박스와 박스 안의 엘리먼트 간격을 조정하기 위한 방법으로 쓰입니다.
+     이 경우에는 박스 안의 엘리먼트에 margin을 적용하는 방법이 있습니다. -->
