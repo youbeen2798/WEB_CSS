@@ -1,0 +1,28 @@
+<!-- margin 속성값을 2개 적용한 예제입니다. 첫 번째 값은 위쪽, 아래쪽이고,
+     두 번째 값은 왼쪽, 오른쪽입니다. -->
+
+<!-- margin 속성값 개수별 사용 방법
+     1. 선택자{margin:20px} : 모든 방향 20px 적용
+     2. 선택자{margin:20px 30px} : 위아래 20px, 양 옆 30px 적용
+     3. 선택자{margin:20px 30px 10px} : 위 20px, 양 옆 30px 아래 10px 적용
+     4. 선택자{margin:20px 10px 50px 20px} : 위 20px 오른쪽 10px 아래 50px 왼쪽 10px 적용(시계방향)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>박스의 바깥 여백 지정</title>
+  <style>
+    div{width:150px; height:150px}
+    .targetBox{float:left; background:skyblue; margin:10px 130px}
+    .box1{float:left; background:hotpink}
+    .box2{clear:both; float:left; background:yellow}
+  </style>
+</head>
+<body>
+  <div class = "targetBox">target box</div>
+  <div class = "box1">side box</div>
+  <div class = "box2">bottom box</div>
+</body>
+</html>
