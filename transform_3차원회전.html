@@ -1,0 +1,28 @@
+<!-- 2차원으로 transform 속성 사용 방법
+     선택자{transform:rotate(40deg)}
+-->
+
+<!-- 아래 예제는 박스를 3차원적으로 변경해 보겠습니다.
+     이때 사용하는 값에는 rotateX와 rotateY가 있습니다. -->
+
+<!-- rotateX는 가로축(x축)을 기준으로 회전을 하며, rotateY는 세로축(y축)을 기준으로
+   회전을 합니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>3차원 각도변경</title>
+  <link rel = "stylesheet" href = "./cssEx/cssReset.css" />
+  <style>
+    .box{float:left; width:100px; height:100px; margin:50px; background:yellow}
+    .rotateX{transform:rotateX(50deg)}
+    .rotateY{transform:rotateY(50deg)}
+  </style>
+</head>
+<body>
+  <div class = "rotateX box">rotateX를 적용</div>
+  <div class = "box">rotate를 적용하지 않은 박스</div>
+  <div class = "rotateY box">rotateY를 적용</div>
+</body>
+</html>
