@@ -1,0 +1,33 @@
+<!-- 확대하는 방법에 대해 알아보겠습니다.
+     확대할 때는 transform 속성 값으로 scale을 사용합니다. -->
+
+<!-- transform 속성으로 확대/축소 구현 방법
+     선택자{transform:scale(가로 확대 축소값, 세로 확대 축소값)}
+
+     값은 1은 원래 크기고, 2는 2배, 0.5는 현재 크기의 절반입니다.
+     가로값, 세로값 구분 없이 하나만 사용할 수도 있습니다.
+     하나만 사용할 경우 그 값은 가로값과 세로값에 모두 적용됩니다. -->
+
+<!-- 아래는 박스 4개를 만들어 확대, 원형, 축소한 박스를 한눈에 확인하는 예제입니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset ="utf-8" />
+  <title>크기변경</title>
+  <link rel = "stylesheet" href = "./cssEx/cssReset.css" />
+  <style>
+    .box{float:left; width:100px; height:100px; margin:50px; background:yellow}
+    .transform2{transform:scale(2)}
+    .baseBox{transform:sacle(1)}
+    .transform1{transform:scale(0.5)}
+    .transform3{transform:scale(0.5,2)}
+  </style>
+</head>
+<body>
+  <div class = "transform2 box">scale값 2 적용</div>
+  <div class = "baseBox box">scale값 1 적용 </div>
+  <div class = "transform1 box">scale값 0.5적용 </div>
+  <div class = "transform3 box">scale값 0.5과 2적용 </div>
+</body>
+</html>
