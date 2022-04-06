@@ -1,0 +1,54 @@
+<!-- 기본 animation 기능 사용 방법
+
+     선택자{animation:키프레임 이름, 시간, 반복횟수}
+     @keyframes 키프레임 이름{
+       from{시작할 CSS 속성과 값}
+       to{끝날 CSS 속성과 값}
+     }
+-->
+
+<!-- 처음과 끝 효과 이외에 중간 효과를 지정하려면 from과 to 사이에 %를 합니다.
+     그리고 효과 적용 횟수 대신 infinite를 값으로 적용하면 효과가 무한대로 반복됩니다. -->
+
+<!-- animation 기능 사용 방법_2
+
+     @keyframes 키프레임 이름{
+       from{시작할 CSS 속성과 값}
+       10%{10% 정도의 진행 상황에 적용할 CSS 속성과 값}
+       30%{30% 정도의 진행 상황에 적용할 CSS 속성과 값}
+       50%{50% 정도의 진행 상황에 적용할 CSS 속성과 값}
+       70%{70% 정도의 진행 상황에 적용할 CSS 속성과 값}
+       to{끝날 CSS 속성과 값}
+     }
+
+     이와 깉이 자신이 작성하고 싶은 % 값을 작성하면 됩니다. -->
+
+<!-- 다음은 박스가 오른쪽으로 이동하면서 커지다가
+     왼쪽으로 이동하면서 작아지는 효과를 무한 반복하는 예제입니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CSS 에니메이션 효과를</title>
+  <link rel = "stylesheet" href="./cssEx/cssReset.css" />
+  <style>
+    .move{width:100px; height:80px; border-radius:20px; background:skyblue; position:relative; animation:move 9s infinite}
+
+    @keyframes move{
+      from{left:0}
+      10%{width:120px; height:100px; left:300px}
+      30%{width:150px; height:130px; left:500px}
+      50%{width:300px; height:260px; left:800px}
+      70%{width:150px; height:130px; left:500px}
+      90%{width:120px; height:100px; left:300px}
+      to{left:0px}
+    }
+
+    .move p{float:left; width:100%; text-align:center; margin:30px 0 0 0; font-size: 20px; color:orange; font-weight:bold}
+  </style>
+</head>
+<body>
+  <div class = "move"><p>animation</p></div>
+</body>
+</html>
