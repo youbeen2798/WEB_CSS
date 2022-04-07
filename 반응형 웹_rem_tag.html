@@ -1,0 +1,37 @@
+<!-- 반응형 웹이란, 다양한 디바이스(다양한 화면 크기)에 대응하는 웹을 뜻합니다. 모바일 웹은 휴대전화의 액정 크기에 맞춰 제작한 웹페이지를 뜻하며,
+     PC 웹은 모니터의 크기에 맞춰 제작한 웹페이지를 뜻합니다. 이를 반응형으로 만들려면 모바일 웹, PC웹 따로 구분할 필요 없이 화면 사이즈에 따라
+     CSS 속성들의 값을 조정하면 됩니다. 그런 반응형 웹을 만드는데 필요한 것이 rem과 em 단위입니다.
+
+     반응형 웹에서는 font-size 속성값 단위로 em 또는 rem을 주로 사용합니다. em은 값을 부모 태그의 font-size 속성값을 기준으로 설정하고,
+     rem은 최상위 태그의 font-size 속성값을 기준으로 설정합니다. 예를 들어, html 태그의 font-size 속성값을 10px로 설정하고,
+     하위 엘리먼트의 font-size 속성값을 1rem으로 설정하면 해당 엘리먼트의 font-size 값은 10px이 되고, 값을 1.5rem으로 하면 15px이 됩니다.
+     즉, html 태그의 font-size 속성값에 곱셈을 한 값과 같습니다. -->
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>rem단위 사용하기</title>
+    <link rel = "stylesheet" href = "./cssEx/cssReset.css" />
+    <style>
+      html{font-size:10px}
+      .rem1{font-size:1rem}
+      .rem2{font-size:2rem}
+      .rem3{font-size:3rem}
+      .rem5{font-size:5rem}
+      .rem8{font-size:8rem}
+    </style>
+  </head>
+  <body>
+    <p class = "rem1">1rem을 적용</p>
+    <p class = "rem2">2rem을 적용</p>
+    <p class = "rem3">3rem을 적용</p>
+    <p class = "rem5">5rem을 적용</p>
+    <p class = "rem8">8rem을 적용</p>
+  </body>
+  </html>
+
+  <!-- 코드설명
+       html태그에 font-size:10px이 적용된 것을 알 수 있습니다. 그리고 나머지 텍스트 크기의 단위를 rem으로 변경한 후
+       html 태그의 font-size 속성값을 바꾸면 모든 텍스트 크기를 한꺼번에 제어할 수 있습니다.
+       html 태그에 적용된 font-size의 값을 바꿔보면서 연습해보기 바랍니다.-->
