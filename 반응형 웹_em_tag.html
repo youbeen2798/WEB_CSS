@@ -1,0 +1,32 @@
+<!-- 반응형 웹이란, 다양한 디바이스(다양한 화면크기)에 대응하는 웹을 말합니다.
+     반응형 웹에서는 font-size 속성값 단위로 em 또는 rem을 주로 사용합니다.
+     em은 값을 부모 태그의 font-size 속성값을 기준으로 설정하고, rem은 최상위 태그의 font-size 속성값을 기준으로 설정합니다.
+
+     이것이 무엇을 의미하는지는 다음 예제를 통해 알 수 있습니다. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>rem과 em의 차이</title>
+  <link rel = "stylesheet" href = "./cssEx/cssReset.css" />
+  <style>
+    html{font-size:10px}
+    .parent{font-size:3rem}
+    .child{font-size:2em}
+    .child2{font-size:2rem}
+  </style>
+</head>
+<body>
+  <p>i am nothing [10px] </p>
+  <div class = "parent">
+    <p class = "child">i am child [2rem]</p>
+    <p class = "child2">i am child2 [2rem] </p>
+  </div>
+</body>
+</html>
+
+<!-- 코드설명
+     html 태그의 font-size 속성값은 10px입니다. 클래스 parent의 값은 3rem이고, rem은 html 태그의 값을 기준으로 하므로
+     px로 나타내면 30px(3rem x 10px)입니다. 또한 클래스 chil1의 값은 2em이고, em은 부모 태그의 값을 기준으로 하므로
+     px로 나타내면 60px(2em X 30px)이고, 클래스 child2의 값은 2rem이므로 px로 나타내면 20px(2rem X 10px)입니다. -->
